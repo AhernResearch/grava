@@ -1,8 +1,18 @@
 <div align="center">
   <img src="assets/grava-logo.png" alt="GRAVA logo" width="156">
   <h1>GRAVA</h1>
-  <p><strong>Grounded Reasoning-to-Action Representation and Learning<br>for Autonomous Driving</strong></p>
-  <p>Xiao Liu · Haoyu Li · Lin Wang · Chao Sun</p>
+  <h2>Grounded Reasoning-to-Action Representation and Learning<br>for Autonomous Driving</h2>
+  <p>
+    Xiao Liu<sup>1,3</sup> ·
+    Haoyu Li<sup>1,2</sup> ·
+    Lin Wang<sup>2</sup> ·
+    Chao Sun<sup>1,3,*</sup>
+  </p>
+  <p>
+    <sub><sup>1</sup> Beijing Institute of Technology &nbsp;&nbsp; <sup>2</sup> Nanyang Technological University</sub>
+    <br>
+    <sub><sup>3</sup> Shenzhen Shineon AI Technology Co., Ltd. &nbsp;&nbsp; <sup>*</sup> Corresponding author</sub>
+  </p>
   <img alt="Paper: coming soon" src="https://img.shields.io/badge/Paper-coming_soon-6c757d">
   <img alt="Code: staged release" src="https://img.shields.io/badge/Code-staged_release-2563eb">
   <img alt="Dataset: preparing" src="https://img.shields.io/badge/GR--NavSim-preparing-f59e0b">
