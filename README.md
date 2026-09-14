@@ -1,32 +1,22 @@
 <div align="center">
-  <img src="assets/grava-banner.svg" alt="GRAVA — Grounded Reasoning-to-Action for autonomous driving" width="100%">
-</div>
-
-<h1 align="center">GRAVA</h1>
-
-<p align="center">
-  <strong>Grounded Reasoning-to-Action Representation and Learning for Autonomous Driving</strong>
-</p>
-
-<p align="center">
-  Xiao Liu · Haoyu Li · Lin Wang · Chao Sun
-</p>
-
-<p align="center">
+  <img src="assets/grava-logo.png" alt="GRAVA logo" width="156">
+  <h1>GRAVA</h1>
+  <p><strong>Grounded Reasoning-to-Action Representation and Learning<br>for Autonomous Driving</strong></p>
+  <p>Xiao Liu · Haoyu Li · Lin Wang · Chao Sun</p>
   <img alt="Paper: coming soon" src="https://img.shields.io/badge/Paper-coming_soon-6c757d">
   <img alt="Code: staged release" src="https://img.shields.io/badge/Code-staged_release-2563eb">
   <img alt="Dataset: preparing" src="https://img.shields.io/badge/GR--NavSim-preparing-f59e0b">
   <img alt="Benchmark: NAVSIM" src="https://img.shields.io/badge/Benchmark-NAVSIM-0f766e">
-</p>
-
-<p align="center">
-  <a href="#overview">Overview</a> ·
-  <a href="#highlights">Highlights</a> ·
-  <a href="#method">Method</a> ·
-  <a href="#project-ecosystem">Ecosystem</a> ·
-  <a href="#release-roadmap">Roadmap</a> ·
-  <a href="#citation">Citation</a>
-</p>
+  <p>
+    <a href="#overview">Overview</a> ·
+    <a href="#highlights">Highlights</a> ·
+    <a href="#method">Method</a> ·
+    <a href="#qualitative-examples">Examples</a> ·
+    <a href="#project-ecosystem">Ecosystem</a> ·
+    <a href="#release-roadmap">Roadmap</a> ·
+    <a href="#citation">Citation</a>
+  </p>
+</div>
 
 ## Overview
 
@@ -63,24 +53,31 @@ details are being prepared.
 
 ## Method
 
-```mermaid
-flowchart LR
-    A[NAVSIM scenes] --> B[Forward scene grounding]
-    A --> C[Backward trajectory anchoring]
-    B --> D[GRA graph]
-    C --> D
-    D --> E[GR-NavSim supervision]
-    E --> F[Grounded pre-training]
-    F --> G[Planner warm-up]
-    G --> H[Verified self-distillation]
-    H --> I[Active RL]
-    I --> J[Grounded reasoning + planner action]
-    J --> K[Continuous trajectory]
-```
+<div align="center">
+  <a href="assets/grava-overview.png">
+    <img src="assets/grava-overview.png" alt="Overview of the GRAVA data pipeline, model, datasets, and training stages" width="100%">
+  </a>
+  <br>
+  <sub><strong>GRAVA overview.</strong> The GRA agentic data pipeline produces grounded cognition and planning supervision for a shared VLM, followed by grounded pre-training, planner warm-up, verified self-distillation, and Active RL.</sub>
+</div>
+
+<br>
 
 At inference time, GRAVA receives visual observations and navigation context. It
 produces grounded reasoning and a primitive-specific planner action in a shared
 sequence; a fixed geometric decoder then recovers the trajectory.
+
+## Qualitative examples
+
+<div align="center">
+  <a href="assets/grava-real-cases.png">
+    <img src="assets/grava-real-cases.png" alt="Four real NAVSIM examples showing grounded reasoning and STOP, CRAWL, CRUISE, and CURVE planner actions" width="92%">
+  </a>
+  <br>
+  <sub><strong>Grounded reasoning-to-action on real NAVSIM scenes.</strong> The examples cover signal-controlled stopping, a queue with a crossing rider, queue resumption, and an open-door roadside hazard. Click the figure to inspect the reasoning and planner outputs at full resolution.</sub>
+</div>
+
+<br>
 
 ## Project ecosystem
 
