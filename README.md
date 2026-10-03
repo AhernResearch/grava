@@ -34,8 +34,8 @@
 
 ## 📰 News
 
-- 🚀 **[2026-10-04]** We’ve released [GRAVA Train](https://github.com/AhernResearch/grava-train) to equip VLAs with spatial understanding and high-quality causal reasoning, alongside efficient training infrastructure for autonomous driving models.
-- 🚗 **[2026-10-04]** [GRAVA Sim Engine](https://github.com/AhernResearch/grava-sim-engine) is now available: our simulation and reward engine for training driving models with reinforcement learning.
+- 🚀 **[2026-10-04]** We’ve released [grava-train](https://github.com/AhernResearch/grava-train) to equip VLAs with spatial understanding and high-quality causal reasoning, alongside efficient training infrastructure for autonomous driving models.
+- 🚗 **[2026-10-04]** [grava-sim-engine](https://github.com/AhernResearch/grava-sim-engine) is now available: our simulation and reward engine for training driving models with reinforcement learning.
 
 ## Overview
 
